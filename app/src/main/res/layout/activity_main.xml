@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="end"
+        android:layout_margin="10dp"
+        android:text=""
+        android:textSize="30sp"/>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:columnCount="4"
+        android:rowCount="4">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="onButtonClick"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="CE"
+            android:textAlignment="center"
+            android:textColor="#EF5350"
+            android:textSize="24sp"
+            app:backgroundTint="@android:color/transparent"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            app:iconSize="24sp"
+            android:id="@+id/buttonBackSpace"
+            app:elevation="0dp"
+            app:icon="@drawable/round_backspace_24"
+            app:iconTint="#EF5350" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:clickable="false"
+            android:textColor="#42A5F5"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="@android:color/transparent"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="onButtonClick"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="/"
+            android:textColor="#42A5F5"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="?attr/colorSecondary"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:onClick="onButtonClick"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="7"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="?attr/colorSecondary"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="onButtonClick"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="8"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="?attr/colorSecondary"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="onButtonClick"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="9"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="?attr/colorSecondary"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="onButtonClick"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="*"
+            android:textColor="#42A5F5"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="?attr/colorSecondary"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="onButtonClick"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="4"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="?attr/colorSecondary"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="onButtonClick"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="5"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="?attr/colorSecondary"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="onButtonClick"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="6"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="?attr/colorSecondary"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="onButtonClick"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+
+            android:fontFamily="@font/poppins_semibold"
+            android:text="-"
+            android:textColor="#42A5F5"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="?attr/colorSecondary"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="onButtonClick"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="?attr/colorSecondary"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="onButtonClick"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="?attr/colorSecondary"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="onButtonClick"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="3"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="?attr/colorSecondary"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="onButtonClick"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="+"
+            android:textColor="#42A5F5"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="?attr/colorSecondary"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="onButtonClick"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="?attr/colorSecondary"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="onButtonClick"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="."
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="?attr/colorAccent"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="onButtonClick"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="="
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:backgroundTint="?attr/colorPrimary"
+            app:cornerRadius="10dp"
+            app:elevation="0dp" />
+
+    </GridLayout>
+
+</LinearLayout>
